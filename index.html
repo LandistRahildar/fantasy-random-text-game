@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fantasy random text game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap"
@@ -14,25 +17,30 @@
 
 <body>
 
-    <h2>🛡️ Fantasy random text game ⚔️</h2>
+    <div class="container">
 
-    <label for="characterName">Enter your fantasy character name → </label>
-    <input id="characterName" type="text"><br>
+        <h2>🛡️ Fantasy random text game ⚔️</h2>
 
-    <button id="characterButton" class="button" title="Click for create your fantasy character!">Create
-        character</button>
+        <label for="characterName">Enter your fantasy character name</label><br>
+        <input id="characterName" type="text"><br>
 
-    <p id="character"></p>
+        <button id="characterButton" class="button" title="Click for create your fantasy character!">Create
+            character</button>
 
-    <button id="equipmentButton" class="button" title="Click for get some random equipment for your character!">Get
-        equipment</button>
+        <p id="character"></p>
 
-    <p id="characterWithEquipment"></p>
+        <button id="equipmentButton" class="button" title="Click for get some random equipment for your character!">Get
+            equipment</button>
 
-    <button id="statisticsButton" class="button" title="Click for get some random statistics for your character!">Get
-        statistics</button>
+        <p id="characterWithEquipment"></p>
 
-    <p id="characterWithStatistics"></p>
+        <button id="statisticsButton" class="button"
+            title="Click for get some random statistics for your character!">Get
+            statistics</button>
+
+        <p id="characterWithStatistics"></p>
+
+    </div>
 
     <script src="script.js"></script>
 </body>
