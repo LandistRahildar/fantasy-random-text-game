@@ -33,19 +33,19 @@
     {
         document.getElementById("statisticsButton").onclick = function () {
             const characterName = document.getElementById("characterName").value;
-            const randomAmountOfLuck = Math.floor(Math.random() * 7 + 1);
-            const randomAmountOfInsideFire = Math.floor(Math.random() * 3 + 1);
+            let randomAmountOfLuck = Math.floor(Math.random() * 6 + 2);
+            let randomAmountOfInsideFire = Math.floor(Math.random() * 3 + 2);
 
             document.getElementById("characterWithStatistics").innerHTML = `
-                ${characterName} random statiscics are: <br>
+                ${characterName} random statistics are: <br>
                 ${randomAmountOfLuck} points of luck 🍀 <br>
                 ${randomAmountOfInsideFire} points of inside fire 🔥 <br>
             `;
 
             //TO DO: if random amount of luck or fire is 1 it must have 'point' instead of 'points' in HTML
 
-            // if (randomAmountOfLuck = 1) {
-            //     // document.getElementById("characterWithStatistics").innerHTML = `point`
+            // if (randomAmountOfLuck, randomAmountOfInsideFire = 1) {
+            //     document.getElementById("point").innerHTML = "point";
             // }
         }
     }
